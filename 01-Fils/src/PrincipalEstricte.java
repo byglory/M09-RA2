@@ -3,11 +3,18 @@ public class PrincipalEstricte {
         Fil filPepe = new Fil("Pepe");
         Fil filJuan = new Fil("Juan");
 
-        filPepe.setPriority(10);
-        filJuan.setPriority(10);
+        filPepe.setPriority(1);
+        filJuan.setPriority(1);
+        
+        filJuan.start();
+        try{
+            Thread.sleep(1);
+        }catch (InterruptedException e){
+
+        }
         
         filPepe.start();
-        filJuan.start();
+        
 
         System.out.println("Acaba thread main");
     }
