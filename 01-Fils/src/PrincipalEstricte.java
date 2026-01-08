@@ -1,5 +1,5 @@
 public class PrincipalEstricte {
-    void main(){
+    public static void main(String[] args) {
         Fil filPepe = new Fil("Pepe");
         Fil filJuan = new Fil("Juan");
 
