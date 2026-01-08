@@ -1,5 +1,5 @@
 public class MainDemoFil {
-    void main(){
+    public static void main(String[] args) {
         Thread filActual = Thread.currentThread();
         System.out.println("MainDemoFil.main:");
         System.out.printf("Prioritat -> %d, Nom -> %s %n", 
