@@ -28,7 +28,7 @@ public class DormAleatori extends Thread{
     }
     public static void main(String[] args) {
         DormAleatori Joan = new DormAleatori("Joan");
-        DormAleatori Pep = new DormAleatori("Pep ");
+        DormAleatori Pep = new DormAleatori("Pep    ");
         Joan.start();
         Pep.start();
         System.out.println("Fi de main");
