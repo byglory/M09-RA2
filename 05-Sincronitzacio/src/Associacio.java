@@ -10,7 +10,7 @@ public class Associacio {
             socis[i] = new Soci();
             socis[i].start();
         }
-    }
+    } 
 
     public static void esperaPeriodeSoci(){
         for (int i = 0; i < numSocis; i++) {
@@ -22,7 +22,7 @@ public class Associacio {
     }
 
     public static void mostraBalancCompte(){
-        System.out.println(Compte.getInstance().getSaldo());
+        System.out.println(Compte.getInstance().getSaldo() );
     }
     public static void main(String[] args) {
         iniciaCompteTempsSocis();

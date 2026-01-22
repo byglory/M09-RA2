@@ -1,13 +1,13 @@
 public class Compte {
     float saldo;
-    static Compte instancia;
+    private static Compte instancia;
     public Compte(){}
     public static synchronized Compte getInstance() {
         if (instancia == null) {
             instancia = new Compte();
         }
         return instancia;
-    }
+    } 
     public Compte(int saldo) {
         this.saldo = saldo;
     }
