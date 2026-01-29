@@ -14,8 +14,8 @@ public class Soci extends Thread{
 
     @Override
     public void run(){
-        for (int i = 0; i < maxAnys; i++) {
-            for (int j = 0; j < 12; j++) {
+        for (int i = 1; i <= maxAnys; i++) {
+            for (int j = 1; j <= 12; j++) {
                 synchronized (compte) {
                     if(j%2==0){
                     compte.setSaldo(compte.getSaldo()+aportacio);
