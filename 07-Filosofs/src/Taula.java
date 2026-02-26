@@ -1,7 +1,7 @@
 public class Taula {
     private Forquilla[] forquilles; 
     private Filosof[] comensals;
-    
+     
     public Taula(int numComensals) {
         forquilles = new Forquilla[numComensals]; 
         comensals = new Filosof[numComensals];
@@ -9,7 +9,7 @@ public class Taula {
             forquilles[i] = new Forquilla(i);
        }
         for (int i = 0; i < numComensals; i++) {
-            Forquilla esquerra = forquilles[1];
+            Forquilla esquerra = forquilles[i];
             Forquilla dreta = forquilles[(i+1)%numComensals];
             comensals[i] = new Filosof("fil " + i,esquerra,dreta); 
         }

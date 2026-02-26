@@ -12,7 +12,7 @@ public class Filosof extends Thread {
         this.gana = 0;
         this.random = new Random();
     }
-
+ 
     public void pensar() {
         System.out.println("Filòsof: " + getName() + " pensant");
         try {
@@ -33,7 +33,7 @@ public class Filosof extends Thread {
                 if (!forquillaEsquerra.isEnUs()) {
                     forquillaEsquerra.setEnUs(true);
                     teEsquerra = true;
-                    System.out.println("Filòsof: " + getName() + " agafa la forquilla esquerra " + forquillaEsquerra.getNumero());
+                    System.out.println("Filòsof: " + getName() + " agafa la forquilla esquerra " + forquillaEsquerra.getNum());
                 }
             }
 
@@ -42,7 +42,7 @@ public class Filosof extends Thread {
                     if (!forquillaDreta.isEnUs()) {
                         forquillaDreta.setEnUs(true);
                         teDreta = true;
-                        System.out.println("Filòsof: " + getName() + " agafa la forquilla dreta " + forquillaDreta.getNumero());
+                        System.out.println("Filòsof: " + getName() + " agafa la forquilla dreta " + forquillaDreta.getNum());
                     }
                 }
 
@@ -64,7 +64,7 @@ public class Filosof extends Thread {
                     synchronized (forquillaEsquerra) {
                         forquillaEsquerra.setEnUs(false);
                     }
-                    System.out.println("Filòsof: " + getName() + " deixa l'esquerra(" + forquillaEsquerra.getNumero() + ") i espera (dreta ocupada)");
+                    System.out.println("Filòsof: " + getName() + " deixa l'esquerra(" + forquillaEsquerra.getNum() + ") i espera (dreta ocupada)");
                     gana++;
                     System.out.println("Filòsof: " + getName() + " gana=" + gana);
                     esperarPerTornarAIntentar();
